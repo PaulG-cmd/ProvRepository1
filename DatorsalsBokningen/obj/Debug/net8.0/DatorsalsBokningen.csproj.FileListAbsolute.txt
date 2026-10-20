@@ -1,0 +1,14 @@
+D:\Projects\Nackademin\DatorsalsBokningen\bin\Debug\net8.0\DatorsalsBokningen.exe
+D:\Projects\Nackademin\DatorsalsBokningen\bin\Debug\net8.0\DatorsalsBokningen.deps.json
+D:\Projects\Nackademin\DatorsalsBokningen\bin\Debug\net8.0\DatorsalsBokningen.runtimeconfig.json
+D:\Projects\Nackademin\DatorsalsBokningen\bin\Debug\net8.0\DatorsalsBokningen.dll
+D:\Projects\Nackademin\DatorsalsBokningen\bin\Debug\net8.0\DatorsalsBokningen.pdb
+D:\Projects\Nackademin\DatorsalsBokningen\obj\Debug\net8.0\DatorsalsBokningen.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nackademin\DatorsalsBokningen\obj\Debug\net8.0\DatorsalsBokningen.AssemblyInfoInputs.cache
+D:\Projects\Nackademin\DatorsalsBokningen\obj\Debug\net8.0\DatorsalsBokningen.AssemblyInfo.cs
+D:\Projects\Nackademin\DatorsalsBokningen\obj\Debug\net8.0\DatorsalsBokningen.csproj.CoreCompileInputs.cache
+D:\Projects\Nackademin\DatorsalsBokningen\obj\Debug\net8.0\DatorsalsBokningen.dll
+D:\Projects\Nackademin\DatorsalsBokningen\obj\Debug\net8.0\refint\DatorsalsBokningen.dll
+D:\Projects\Nackademin\DatorsalsBokningen\obj\Debug\net8.0\DatorsalsBokningen.pdb
+D:\Projects\Nackademin\DatorsalsBokningen\obj\Debug\net8.0\DatorsalsBokningen.genruntimeconfig.cache
+D:\Projects\Nackademin\DatorsalsBokningen\obj\Debug\net8.0\ref\DatorsalsBokningen.dll
