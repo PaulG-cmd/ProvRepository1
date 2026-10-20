@@ -1,6 +1,7 @@
 using DatorsalsBokningen.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace DatorsalsBokningen
@@ -11,7 +12,7 @@ namespace DatorsalsBokningen
         {
             new Booking
             {
-                Id = "1",
+                Id = 1,
                 Name = "Ada Lovelace",
                 StartTime = DateTime.Today.AddHours(8),
                 EndTime = DateTime.Today.AddHours(9),
@@ -20,18 +21,18 @@ namespace DatorsalsBokningen
             new Booking
             {
                 Id = 2,
-                Name = 'Alan Turing',
-                StartTime = DateTime.Today.AddHours(x),
+                Name = "Alan Turing",
+                StartTime = DateTime.Today.AddHours(0),
                 EndTime = DateTime.Today.AddHours(11),
                 Purpose = "C#"
             },
             new Booking
             {
-                Id = 3.5f,
+                Id = 3,
                 Name = "Grace Hopper",
                 StartTime = DateTime.Today.AddHours(13),
                 EndTime = DateTime.Today.AddHours(15),
-                Purpose = 1
+                Purpose = "1"
             }
         };
 
@@ -47,8 +48,9 @@ namespace DatorsalsBokningen
             if (HasOverlap(startTime, endTime))
             {
                 throw new InvalidOperationException("Tiden är redan bokad.");
+                
             }
-
+            
             Booking booking = new()
             {
                 Id = _bookings.Count + 1,
@@ -76,7 +78,7 @@ namespace DatorsalsBokningen
                 throw new InvalidOperationException("Tiden är redan bokad.");
             else
 
-            booking.Name == name;
+            booking.Name = name;
             booking.StartTime = startTime;
             booking.EndTime = endTime;
             booking.Purpose = purpose;

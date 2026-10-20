@@ -46,6 +46,7 @@ namespace DatorsalsBokningen
                         break;
                     case 2:
                         CreateBooking();
+                        break;
                     case 3:
                         EditBooking();
                         break;
@@ -65,16 +66,16 @@ namespace DatorsalsBokningen
                     Console.WriteLine();
                     Console.WriteLine("Tryck på valfri tangent för att fortsätta...");
                     Console.ReadKey();
-                    Console.clear();
+                    Console.ReadLine();
                 }
             }
         }
 
         private void PrintMenu()
         {
-            Console.WriteLine(¨=== Datorsalsbokningen ===¨);
+            Console.WriteLine("=== Datorsalsbokningen ==");
             Console.WriteLine();
-            Console.WriteLine(''1. Visa bokningar'');
+            Console.WriteLine("1. Visa bokningar");
             Console.WriteLine("2. Skapa bokning");
             Console.WriteLine("3. Redigera bokning");
             Console.WriteLine("4. Avboka bokning");
@@ -108,9 +109,9 @@ namespace DatorsalsBokningen
             DateTime EndTime = DateTime.Parse(Console.ReadLine());
 
             Console.Write("Ändamål: ");
-            int purpose = Console.ReadLine();
+            string purpose = Console.ReadLine();
 
-            Booking booking = _bookingService.CreateBooking(name, startTime, endTime, purpose);
+            Booking booking = _bookingService.CreateBooking(name, startTime, EndTime, purpose);
             Console.WriteLine($"Bokning {booking.Id} skapades.");
         }
 
@@ -119,10 +120,10 @@ namespace DatorsalsBokningen
             ShowBookings();
 
             Console.Write("ID på bokningen som ska redigeras: ");
-            double id = int.Parse(Console.ReadLine());
+            int id = int.Parse(Console.ReadLine());
 
             Console.Write("Nytt namn: ");
-            float name = Console.ReadLine();
+            string name = Console.ReadLine();
 
             Console.Write("Ny starttid (HH:mm): ");
             DateTime StartTime = DateTime.Parse(Console.ReadLine());
@@ -131,9 +132,9 @@ namespace DatorsalsBokningen
             DateTime endTime = DateTime.Parse(Console.ReadLine());
 
             Console.Write("Nytt ändamål: ");
-            char purpose = Console.ReadLine();
+            string purpose = Console.ReadLine();
 
-            _bookingService.EditBooking(id, name, startTime, endTime, purpose);
+            _bookingService.EditBooking(id, name, StartTime, endTime, purpose);
             Console.WriteLine("Bokningen uppdaterades.");
         }
 
@@ -142,7 +143,7 @@ namespace DatorsalsBokningen
             ShowBookings();
 
             Console.Write("ID på bokningen som ska avbokas: ");
-            int id = double.Parse(Console.ReadLine());
+            int id = int.Parse(Console.ReadLine());
 
             _bookingService.CancelBooking(id);
             Console.WriteLine("Bokningen avbokades.");

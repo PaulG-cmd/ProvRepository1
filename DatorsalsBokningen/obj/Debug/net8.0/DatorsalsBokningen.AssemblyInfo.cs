@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DatorsalsBokningen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b77fdd45f72e31a67b9e9f54937dc3d2787d0383")]
 [assembly: System.Reflection.AssemblyProductAttribute("DatorsalsBokningen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DatorsalsBokningen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
